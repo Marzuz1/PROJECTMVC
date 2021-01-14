@@ -112,13 +112,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto d-flex justify-content-center align-items-center">
                     <li class="nav-item">
-                        @Html.ActionLink("TRANG CHỦ", "TrangChu", "Home")
-                    </li>
-                    <li class="nav-item">
-                        @Html.ActionLink("GIỚI THIỆU", "GioiThieu", "GioiThieu")
-                    </li>
+                        @Html.ActionLink("HOME PAGE", "TrangChu", "Home")
+                    </li>          
                     <li class="nav-item active">
-                        @Html.ActionLink("SẢN PHẨM", "SanPhamPartial", "SanPham")
+                        @Html.ActionLink("PRODUCT", "SanPhamPartial", "SanPham")
                     </li>
                     @if (Session["taikhoan"] != null) { 
                         <li style="width: 200px;" class="text-right text-white position-relative login">
@@ -130,10 +127,10 @@
                     }
                     else {
                         <li class="nav-item position-relative login">
-                            <span class="text-white font-weight-bold" style="text-decoration: none; cursor: pointer">ĐĂNG NHẬP</span>
+                            <span class="text-white font-weight-bold" style="text-decoration: none; cursor: pointer">LOG IN</span>
                             <div class="optionLogin">
-                                <a href="@Url.Action("DangNhap","DangNhap")">Đăng nhập quyền admin</a>
-                                <a href="@Url.Action("DangNhap", "User")">Đăng nhập quyền user</a>
+                                <a href="@Url.Action("DangNhap","DangNhap")">Log as ADMIN</a>
+                                <a href="@Url.Action("DangNhap", "User")">Log as User</a>
                             </div>
                         </li>
                         <li class="nav-item position-relative login">
