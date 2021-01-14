@@ -59,7 +59,7 @@
                         <li style="width: 200px;" class="text-right text-white position-relative login">
                             <span class="mr-2">Xin chào</span><span class="text-white" style="text-decoration: none; cursor: pointer">@Session["User"]</span>
                             <div class="optionLogin">
-                                <a href="@Url.Action("DangXuat", "User")">Đăng xuất</a>
+                                <a href="@Url.Action("DangXuat", "User")">Log out</a>
                             </div>
                         </li>
                     }
@@ -67,8 +67,8 @@
                         <li class="nav-item position-relative login">
                             <span class="text-white font-weight-bold" style="text-decoration: none; cursor: pointer">LOGIN</span>
                             <div class="optionLogin">
-                                <a href="@Url.Action("DangNhap","DangNhap")">Đăng nhập quyền admin</a>
-                                <a href="@Url.Action("DangNhap", "User")">Đăng nhập quyền user</a>
+                                <a href="@Url.Action("DangNhap","DangNhap")">Log as ADMIN</a>
+                                <a href="@Url.Action("DangNhap", "User")">Log as User</a>
                             </div>
                         </li>
                         <li class="nav-item position-relative login">
@@ -124,7 +124,7 @@
                             <a href="@Url.Action("SanPhamPartial", "SanPham")">
                                 <img src="~/Images/cm1.jpg" class="w-100" />
                                 <div class="details detailsForMen position-absolute">
-                                    <h3>TRANG PHỤC NAM</h3>
+                                    <h3>Men</h3>
                                 </div>
                             </a>
                         </div>
@@ -136,7 +136,7 @@
                             <a href="@Url.Action("SanPhamPartial", "SanPham")">
                                 <img src="~/Images/cm3.jpg" class="w-100" />
                                 <div class="details detailsForWomen position-absolute">
-                                    <h3>TRANG PHỤC NỮ</h3>
+                                    <h3>Women</h3>
                                 </div>
                             </a>
                         </div>
